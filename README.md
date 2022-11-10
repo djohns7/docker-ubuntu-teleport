@@ -7,4 +7,4 @@ Ensure Docker is installed and running, then run "docker build ." in the directo
 On your Teleport cluster, generate a join token with "tctl tokens add --type=node | grep -oP '(?<=token:\s).*'". Save this output.
 
 Then, on your Docker host, start the container with:
-"docker run -t -i --rm teleport-ubuntu teleport start --token=<join token> &"
+"docker run -t -i --rm teleport-ubuntu teleport start --token=join_token_goes_here &"
